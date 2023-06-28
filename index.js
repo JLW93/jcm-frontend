@@ -81,7 +81,7 @@ form.addEventListener('submit', async (e) => {
 
         if (response.ok) {
             // success code, maybe an alert to let the user know that the message sent?
-            alert('Message sent! We will contact you soon!')
+            if(!alert('Message sent! We will contact you soon!')){window.location.reload();}
         } else {
             // error code, maybe try to give different errors depending on the situation?
             alert('Message failed to send. Please try again.')
