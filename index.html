@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JCM Lawn Services</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="mobile-container">
+            <!-- navbar -->
+            <section>
+                <div id="nav" class="navbar row">
+                    <img src="assets/images/logo.png" class="logo">
+                    <ul class="nav">
+                        <li><a href="javascript:toServices()">Services</a></li>
+                        <li><a href="javascript:toGallery()">Our Work</a></li>
+                        <li><a href="javascript:toContact()">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- body -->
+            <section>
+                <div class="hero column">
+                    <div class="hero-text">
+                        <h1>A family-operated business in Shepherdsville, Kentucky</h1>
+                    </div>
+                    <div class="hero-button">
+                        <a href="javascript:toContact()" type="button" class="btn">Request an Estimate</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services">
+                <div class="services column">
+                    <img src="assets/images/wave.svg" class="wave">
+                    <h2>Services:</h2>
+                        <div class="services-grid">
+                            <!-- Icons -->
+                            <div class="grid-icon-1"><img src="assets/images/grass-icon.png" class="grid-icon"></div>
+                            <div class="grid-icon-2"><img src="assets/images/land-icon.png" class="grid-icon"></div>
+                            <div class="grid-icon-3"><img src="assets/images/wall-icon.png" class="grid-icon"></div>
+                            <div class="grid-icon-4"><img src="assets/images/Water_Drop.svg" class="grid-icon"></div>
+                            <div class="grid-icon-5"><i class="fa-solid fa-tractor grid-icon"></i></div>
+
+                            <!-- Services -->
+                            <h3 class="grid-title-1">Lawn Maintenance</h3>
+                            <h3 class="grid-title-2">Land Clearing</h3>
+                            <h3 class="grid-title-3">Retaining Wall Construction</h3>
+                            <h3 class="grid-title-4">Pool Installation</h3>
+                            <h3 class="grid-title-5">Other Services by Request</h3>
+
+                            <!-- Lists -->
+                            <!-- <div class="grid-description-1">
+                                <ul class="grid-list">
+                                    <li>Landscaping</li>
+                                    <li>Lawn Mowing</li>
+                                </ul>
+                            </div>
+                            <div class="grid-description-4">
+                                <ul class="grid-list">
+                                    <li>In-ground</li>
+                                    <li>Above-ground</li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery">
+                <div class="gallery column">
+                    <h2>Our Work:</h2>
+                    <div class="gallery-images row">
+                        <img class="gallery-img" src="assets/images/image1.jpg">
+                        <img class="gallery-img" src="assets/images/image2.jpg">
+                        <img class="gallery-img" src="assets/images/image3.jpg">
+                        <img class="gallery-img" src="assets/images/image4.jpg">
+                    </div>
+                    <div class="modal">
+                        <div class="modal-overlay"></div>
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="contact">
+                <div class="column form">
+                    <h2>Contact us for any questions, or to get a quote!</h2>
+                    <form class="column form-container" id="contactForm" method="POST" enctype="application/json">
+                        <input type="text" class="form-input" id="first_name" name="first_name" placeholder="First name" maxlength="15">
+                        <input type="text" class="form-input" id="last_name" name="last_name" placeholder="Last name" maxlength="15">
+                        <input class="form-input email-input" type="email" id="email" name="email" placeholder="Email address" maxlength="30">
+                        <input class="form-input phone-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="Phone number (000-000-0000)">
+                        <div class="column">
+                            <label for="date" class="form-label form-label-margin">Requested Date:</label>
+                            <input class="form-input" type="date" id=date name="date">
+                        </div>
+                        <div class="column service-selection">
+                            <p class="form-label form-label-margin">Desired Service:</p>
+                            <div class="row center wrap">
+                                <div>
+                                    <input type="checkbox" value="Lawn Maintenance" id="lawn_maintenance" name="type_of_service">
+                                    <label class="form-label" for="lawn_maintenance">Lawn Maintenance</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" value="Land Clearing" id="land_clearing" name="type_of_service">
+                                    <label class="form-label" for="land_clearing">Land Clearing</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" value="Retaining Wall" id="retaining_wall" name="type_of_service">
+                                    <label class="form-label" for="retaining_wall">Retaining Wall</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" value="Pool Installation" id="pool_installation" name="type_of_service">
+                                    <label class="form-label" for="pool_installation">Pool Installation</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" value="Other Service" id="other_service" name="type_of_service">
+                                    <label class="form-label" for="other_service">Other Service (specifiy in message)</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="column qs-selection">
+                            <div>
+                                <input type="radio" name="desired_service" value="quote" id="quote">
+                                <label class="form-label" for="quote">I want a quote</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="desired_service" value="schedule_service" id="schedule_service">
+                                <label class="form-label" for="quote">I want to schedule service</label>
+                            </div>
+
+                        </div>
+                        <textarea class="message-input" id="message" name="message" placeholder="Message (optional)" maxlength="250"></textarea>
+                        <button class="form-btn" type="submit">Send</button>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <section>
+                <div class="footer row center">
+                    <div class="top-button">
+                        <a href="javascript:toTop()"><img src="assets/images/Chevron_Up.svg" class="footer-icon"> Back to top</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/72494a92d2.js" crossorigin="anonymous"></script>
+    </body>
+</html>
