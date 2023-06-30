@@ -74,7 +74,7 @@ form.addEventListener('submit', async (e) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Allow': 'POST'
+                // 'Allow': 'POST'
             },
             body: JSON.stringify(data),
         });
