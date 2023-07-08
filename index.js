@@ -75,7 +75,6 @@ form.addEventListener('submit', async (e) => {
             headers: {
                 'Content-Type': 'application/json',
                 'Origin': 'https://jlw93.github.io'
-                // 'Allow': 'POST'
             },
             body: JSON.stringify(data),
         });
