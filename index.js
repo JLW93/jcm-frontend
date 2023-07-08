@@ -70,7 +70,7 @@ form.addEventListener('submit', async (e) => {
     Object.assign(data, {type_of_service: selectedServices});
 
     try {
-        const response = await fetch(`${url}/api/data/email`, { // replace '/api/data' with url for backend API
+        const response = await fetch(`${url}:${port}/api/data/email`, { // replace '/api/data' with url for backend API
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
