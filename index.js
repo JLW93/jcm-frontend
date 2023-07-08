@@ -74,7 +74,7 @@ form.addEventListener('submit', async (e) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'https://jlw93.github.io'
+                'Origin': 'https://dark-lime-catfish-ring.cyclic.app/'
             },
             body: JSON.stringify(data),
         });
