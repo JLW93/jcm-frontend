@@ -74,7 +74,7 @@ form.addEventListener('submit', async (e) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'https://jcm-frontend.vercel.app'
+                'Origin': 'https://jlw93.github.io/jcm-frontend'
                 // 'Allow': 'POST'
             },
             body: JSON.stringify(data),
