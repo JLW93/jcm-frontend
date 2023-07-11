@@ -58,7 +58,7 @@ function toTop() {
 const form = document.querySelector('#contactForm');
 // const url = 'https://jlw93-automatic-broccoli-6qj4wx9r9r6c5q4p-5500.preview.app.github.dev/jcm-backend';
 const port = 3000;
-const url = `https://lazy-gold-termite-kit.cyclic.app`
+const url = `https://stellar-praline-3d86bf.netlify.app/`
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -74,7 +74,7 @@ form.addEventListener('submit', async (e) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'https://dark-lime-catfish-ring.cyclic.app/'
+                'Origin': 'https://benevolent-panda-858374.netlify.app/'
             },
             body: JSON.stringify(data),
         });
