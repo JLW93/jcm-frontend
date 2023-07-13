@@ -58,7 +58,7 @@ function toTop() {
 const form = document.querySelector('#contactForm');
 // const url = 'https://jlw93-automatic-broccoli-6qj4wx9r9r6c5q4p-5500.preview.app.github.dev/jcm-backend';
 const port = 3000;
-const url = `https://ginger-honey-grease.glitch.me/api/sendmail`
+const url = `https://ginger-honey-grease.glitch.me`
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
