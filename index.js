@@ -74,7 +74,6 @@ form.addEventListener('submit', async (e) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'https://benevolent-panda-858374.netlify.app/'
             },
             body: JSON.stringify(data),
         });
