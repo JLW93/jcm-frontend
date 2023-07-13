@@ -58,7 +58,7 @@ function toTop() {
 const form = document.querySelector('#contactForm');
 // const url = 'https://jlw93-automatic-broccoli-6qj4wx9r9r6c5q4p-5500.preview.app.github.dev/jcm-backend';
 const port = 3000;
-const url = `https://stellar-praline-3d86bf.netlify.app`
+const url = `https://ginger-honey-grease.glitch.me/api/sendmail`
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -70,7 +70,7 @@ form.addEventListener('submit', async (e) => {
     Object.assign(data, {type_of_service: selectedServices});
 
     try {
-        const response = await fetch(`${url}/api/data/email`, { // replace '/api/data' with url for backend API
+        const response = await fetch(`${url}/api/email`, { // replace '/api/data' with url for backend API
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
