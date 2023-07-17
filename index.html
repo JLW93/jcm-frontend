@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>JCM Lawn Services</title>
+        <title>JCM Lawn Services - Professional Lawn Maintenance and Landscaping</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
@@ -12,24 +12,25 @@
         <div class="mobile-container">
             <!-- navbar -->
             <section>
-                <div id="nav" class="navbar row">
-                    <img src="assets/images/logo.png" class="logo">
+                <nav id="nav" class="navbar row">
+                    <img src="assets/images/logo.png" class="logo" alt="JCM Lawn Services Logo">
                     <ul class="nav">
-                        <li><a href="javascript:toServices()">Services</a></li>
-                        <li><a href="javascript:toGallery()">Our Work</a></li>
-                        <li><a href="javascript:toContact()">Contact</a></li>
+                        <li><a href="javascript:toServices()" tabindex="1">Services</a></li>
+                        <li><a href="javascript:toGallery()" tabindex="1">Our Work</a></li>
+                        <li><a href="javascript:toContact()" tabindex="1">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
             </section>
 
             <!-- body -->
+            <main>
             <section>
                 <div class="hero column">
                     <div class="hero-text">
                         <h1>A family-operated business in Shepherdsville, Kentucky</h1>
                     </div>
                     <div class="hero-button">
-                        <a href="javascript:toContact()" type="button" class="btn">Request an Estimate</a>
+                        <a href="javascript:toContact()" type="button" class="btn" tabindex="2">Request an Estimate</a>
                     </div>
                 </div>
             </section>
@@ -40,10 +41,10 @@
                     <h2>Services:</h2>
                         <div class="services-grid">
                             <!-- Icons -->
-                            <div class="grid-icon-1"><img src="assets/images/grass-icon.png" class="grid-icon"></div>
-                            <div class="grid-icon-2"><img src="assets/images/land-icon.png" class="grid-icon"></div>
-                            <div class="grid-icon-3"><img src="assets/images/wall-icon.png" class="grid-icon"></div>
-                            <div class="grid-icon-4"><img src="assets/images/Water_Drop.svg" class="grid-icon"></div>
+                            <div class="grid-icon-1"><img src="assets/images/grass-icon.png" class="grid-icon" alt="Grass Icon"></div>
+                            <div class="grid-icon-2"><img src="assets/images/land-icon.png" class="grid-icon" alt="Land Icon"></div>
+                            <div class="grid-icon-3"><img src="assets/images/wall-icon.png" class="grid-icon" alt="Wall Icon"></div>
+                            <div class="grid-icon-4"><img src="assets/images/Water_Drop.svg" class="grid-icon" alt="Water Drop Icon"></div>
                             <div class="grid-icon-5"><i class="fa-solid fa-tractor grid-icon"></i></div>
 
                             <!-- Services -->
@@ -75,11 +76,11 @@
                 <div class="gallery column">
                     <h2>Our Work:</h2>
                     <div class="gallery-images row">
-                        <img class="gallery-img" src="assets/images/image1.jpg" alt="">
-                        <img class="gallery-img" src="assets/images/image2.jpg" alt="">
-                        <img class="gallery-img" src="assets/images/image3.jpg" alt="">
-                        <img class="gallery-img" src="assets/images/image4.jpg" alt="">
-                        <img class="gallery-img" src="assets/images/image5.jpg" alt="">
+                        <img class="gallery-img" src="assets/images/image1.jpg" alt="Freshly cut grass in a large yard, with trees in the background">
+                        <img class="gallery-img" src="assets/images/image2.jpg" alt="More freshly cut grass, with trees in the foreground">
+                        <img class="gallery-img" src="assets/images/image3.jpg" alt="Small side yard, freshly cut, taken from a sidewalk">
+                        <img class="gallery-img" src="assets/images/image4.jpg" alt="Large, fenced in pasture that has been freshly cut and maintained">
+                        <!-- <img class="gallery-img" src="assets/images/image5.jpg" alt=""> -->
                     </div>
                     <div class="modal">
                         <div class="modal-overlay"></div>
@@ -95,39 +96,39 @@
                 <div class="column form">
                     <h2>Contact us for any questions, or to get a quote!</h2>
                     <form class="column form-container" id="contactForm" method="POST" enctype="application/json">
-                        <input type="text" class="form-input" id="first_name" name="first_name" placeholder="First name" maxlength="15">
-                        <input type="text" class="form-input" id="last_name" name="last_name" placeholder="Last name" maxlength="15">
-                        <input class="form-input email-input" type="email" id="email" name="email" placeholder="Email address" maxlength="30">
-                        <input class="form-input phone-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="Phone number (000-000-0000)">
+                        <input type="text" class="form-input" id="first_name" name="first_name" placeholder="First name" maxlength="15" tabindex="4">
+                        <input type="text" class="form-input" id="last_name" name="last_name" placeholder="Last name" maxlength="15" tabindex="4">
+                        <input class="form-input email-input" type="email" id="email" name="email" placeholder="Email address" maxlength="30" tabindex="4">
+                        <input class="form-input phone-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="Phone number (000-000-0000)"  tabindex="4">
                         <div class="column">
                             <label for="date" class="form-label form-label-margin">Requested Date:</label>
-                            <input class="form-input" type="date" id=date name="date">
+                            <input class="form-input" type="date" id=date name="date" tabindex="4">
                         </div>
                         <div class="column service-selection">
                             <p class="form-label form-label-margin">Desired Service:</p>
                             <div class="row center wrap">
                                 <div>
-                                    <input type="checkbox" value="Lawn Maintenance" id="lawn_maintenance" name="type_of_service">
+                                    <input type="checkbox" value="Lawn Maintenance" id="lawn_maintenance" name="type_of_service" tabindex="5">
                                     <label class="form-label" for="lawn_maintenance">Lawn Maintenance</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" value="Land Clearing" id="land_clearing" name="type_of_service">
+                                    <input type="checkbox" value="Land Clearing" id="land_clearing" name="type_of_service" tabindex="5">
                                     <label class="form-label" for="land_clearing">Land Clearing</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" value="Retaining Wall" id="retaining_wall" name="type_of_service">
+                                    <input type="checkbox" value="Retaining Wall" id="retaining_wall" name="type_of_service" tabindex="5">
                                     <label class="form-label" for="retaining_wall">Retaining Wall</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" value="Pool Installation" id="pool_installation" name="type_of_service">
+                                    <input type="checkbox" value="Pool Installation" id="pool_installation" name="type_of_service" tabindex="5">
                                     <label class="form-label" for="pool_installation">Pool Installation</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" value="Other Service" id="other_service" name="type_of_service">
+                                    <input type="checkbox" value="Other Service" id="other_service" name="type_of_service" tabindex="5">
                                     <label class="form-label" for="other_service">Other Service (specifiy in message)</label>
                                 </div>
                             </div>
@@ -135,29 +136,30 @@
                         </div>
                         <div class="column qs-selection">
                             <div>
-                                <input type="radio" name="desired_service" value="quote" id="quote">
+                                <input type="radio" name="desired_service" value="quote" id="quote" tabindex="4">
                                 <label class="form-label" for="quote">I want a quote</label>
                             </div>
                             <div>
-                                <input type="radio" name="desired_service" value="schedule_service" id="schedule_service">
+                                <input type="radio" name="desired_service" value="schedule_service" id="schedule_service" tabindex="4">
                                 <label class="form-label" for="schedule_service">I want to schedule service</label>
                             </div>
 
                         </div>
-                        <textarea class="message-input" id="message" name="message" placeholder="Message (optional)" maxlength="250"></textarea>
-                        <button class="form-btn" type="submit">Send</button>
+                        <textarea class="message-input" id="message" name="message" placeholder="Message (optional)" maxlength="250" tabindex="6"></textarea>
+                        <button class="form-btn" type="submit" tabindex="6">Send</button>
                 </div>
             </section>
-
+            </main>
             <!-- footer -->
+            <footer>
             <section>
                 <div class="footer row center">
                     <div class="top-button">
-                        <a href="javascript:toTop()"><img src="assets/images/Chevron_Up.svg" class="footer-icon"> Back to top</a>
+                        <a href="javascript:toTop()" tabindex="6"><img src="assets/images/Chevron_Up.svg" class="footer-icon"> Back to top</a>
                     </div>
                 </div>
-
             </section>
+            </footer>
         </div>
         <script src="index.js"></script>
         <script src="https://kit.fontawesome.com/72494a92d2.js" crossorigin="anonymous"></script>

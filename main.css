@@ -311,10 +311,22 @@ input[type="radio"]:hover, input[type="checkbox"]:hover {
     resize: none;
 }
 
+.message-input,
+.message-input::placeholder {
+    font-size: 1.2rem;
+}
+
 .message-input:focus {
     outline: none;
     box-shadow: 0 2px #165624;
 }
+
+input,
+input::placeholder {
+    font-size: 1.2rem;
+}
+
+
 
 .form {
     color: #EAE0CC;
