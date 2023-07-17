@@ -57,7 +57,7 @@ function toTop() {
 
 const form = document.querySelector('#contactForm');
 const port = 3000;
-const url = process.env.API_URL;
+const url = `https://ginger-honey-grease.glitch.me`
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
