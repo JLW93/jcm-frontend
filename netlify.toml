@@ -6,4 +6,4 @@
 [[headers]]
     for = "/*"
     [headers.values]
-    Access-Control-Allow-Origin = "https://benevolent-panda-858374.netlify.app"
+    Access-Control-Allow-Origin = "https://www.jcmlawn.com"
