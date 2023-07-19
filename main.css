@@ -592,7 +592,7 @@ input::placeholder {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     * {
         /* border: 1px solid red; */
     }
