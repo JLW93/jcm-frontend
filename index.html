@@ -97,17 +97,17 @@
                 <div class="column form">
                     <h2>Contact us for any questions, or to get a quote!</h2>
                     <form class="column form-container" id="contactForm" method="POST" enctype="application/json">
-                        <input type="text" class="form-input" id="first_name" name="first_name" placeholder="First name" maxlength="15" tabindex="4">
-                        <input type="text" class="form-input" id="last_name" name="last_name" placeholder="Last name" maxlength="15" tabindex="4">
+                        <input type="text" class="form-input fn-input" id="first_name" name="first_name" placeholder="First name" maxlength="15" tabindex="4">
+                        <input type="text" class="form-input ln-input" id="last_name" name="last_name" placeholder="Last name" maxlength="15" tabindex="4">
                         <input class="form-input email-input" type="email" id="email" name="email" placeholder="Email address" maxlength="30" tabindex="4">
                         <input class="form-input phone-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="Phone number (000-000-0000)"  tabindex="4">
-                        <div class="column">
-                            <label for="date" class="form-label form-label-margin">Requested Date:</label>
+                        <div class="column date-input">
+                            <label for="date" class="form-label form-label-margin"><strong>Requested Date:</strong></label>
                             <input class="form-input" type="date" id=date name="date" tabindex="4">
                         </div>
                         <div class="column service-selection">
-                            <p class="form-label form-label-margin">Desired Service:</p>
-                            <div class="row center wrap">
+                            <p class="form-label form-label-margin"><strong>Desired Service:</strong></p>
+                            <div class="row center wrap service-alignment">
                                 <div>
                                     <input type="checkbox" value="Lawn Maintenance" id="lawn_maintenance" name="type_of_service" tabindex="5">
                                     <label class="form-label" for="lawn_maintenance">Lawn Maintenance</label>

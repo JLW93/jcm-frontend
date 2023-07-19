@@ -326,8 +326,6 @@ input::placeholder {
     font-size: 1.2rem;
 }
 
-
-
 .form {
     color: #EAE0CC;
     justify-content: center;
@@ -619,11 +617,11 @@ input::placeholder {
     }
 
     .hero-text h1 {
-        font-size: 2.2rem !important;
+        font-size: 2rem !important;
     }
 
     .hero-button a {
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
     }
 
     .services-grid {
@@ -744,12 +742,14 @@ input::placeholder {
     }
 
     .form-btn {
+        grid-area: 11 / 1 / -1 / -1;
         margin: 2.5% auto;
         font-size: 1rem;
     }
 
     .message-input,
     .message-input::placeholder {
+        grid-area: 8 / 1 / 11 / -1;
         margin: 1.5% 0 0;
         padding: 0 0 0 2.5%;
         font-size: .8rem;
@@ -772,10 +772,52 @@ input::placeholder {
 
     .form-container {
         gap: 5px;
-        grid-template: repeat(3, .5fr) repeat(4, 1fr) / 1fr 1fr;
+        /* grid-template: repeat(3, .5fr) repeat(4, 1fr) / 1fr 1fr; */
+        grid-template: repeat(6, .5fr) repeat(2, 1fr) .5fr / 1fr 1fr !important;
     }
 
     .form-label-margin {
         margin: 0 0 5%;
+    }
+    
+    .email-input {
+        grid-area: 3 / 1 / 4 / -1;
+    }
+    
+    .phone-input {
+        grid-area: 4 / 1 / 5 / -1;
+    }
+    
+    .date-input {
+        grid-area: 5 / 1 / 6 / -1;
+        margin: 5% 0 0;
+    }
+
+    .fn-input {
+        grid-area: 1 / 1 / 2 / -1;
+    }
+
+    .ln-input {
+        grid-area: 2 / 1 / 3 / -1;
+    }
+
+    .qs-selection {
+        justify-content: center;
+        margin: 0 auto;
+        text-align: left;
+        grid-area: 6 / 1 / 7 / -1;
+        width: 90%;
+    }
+    
+    .service-selection {
+        grid-area: 7 / 1 / 8 / -1;
+        text-align: center;
+    }
+
+    .service-alignment {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        justify-content: start;
     }
 }
