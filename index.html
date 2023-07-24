@@ -104,16 +104,16 @@
                 <div class="column form">
                     <h2>Contact us for any questions, or to get a quote!</h2>
                     <form class="column form-container" id="contactForm" method="POST" enctype="application/json">
-                        <input type="text" class="form-input fn-input" id="first_name" name="first_name" placeholder="First name" maxlength="15" tabindex="4">
+                        <input type="text" class="form-input fn-input" id="first_name" name="first_name" placeholder="First name (required)" maxlength="15" tabindex="4" required>
                         <input type="text" class="form-input ln-input" id="last_name" name="last_name" placeholder="Last name" maxlength="15" tabindex="4">
                         <input class="form-input email-input" type="email" id="email" name="email" placeholder="Email address" maxlength="30" tabindex="4">
-                        <input class="form-input phone-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="Phone number (000-000-0000)"  tabindex="4">
+                        <input class="form-input phone-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="Phone number (000-000-0000) (required)"  tabindex="4" required>
                         <div class="column date-input">
-                            <label for="date" class="form-label form-label-margin"><strong>Requested Date:</strong></label>
-                            <input class="form-input" type="date" id=date name="date" tabindex="4">
+                            <label for="date" class="form-label form-label-margin"><strong>Requested Date:</strong><span class="red">*</span></label>
+                            <input class="form-input" type="date" id=date name="date" tabindex="4" required>
                         </div>
-                        <div class="column service-selection">
-                            <p class="form-label form-label-margin"><strong>Desired Service:</strong></p>
+                        <fieldset class="column service-selection">
+                            <legend class="form-label form-label-margin"><strong>Desired Service:</strong></legend>
                             <div class="row center wrap service-alignment">
                                 <div>
                                     <input type="checkbox" value="Lawn Maintenance" id="lawn_maintenance" name="type_of_service" tabindex="5">
@@ -141,19 +141,19 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </fieldset>
                         <div class="column qs-selection">
                             <div>
-                                <input type="radio" name="desired_service" value="quote" id="quote" tabindex="4">
+                                <input type="radio" name="desired_service" value="quote" id="quote" tabindex="4" required>
                                 <label class="form-label" for="quote">I want a quote</label>
                             </div>
                             <div>
-                                <input type="radio" name="desired_service" value="schedule_service" id="schedule_service" tabindex="4">
+                                <input type="radio" name="desired_service" value="schedule_service" id="schedule_service" tabindex="4" required>
                                 <label class="form-label" for="schedule_service">I want to schedule service</label>
                             </div>
 
                         </div>
-                        <textarea class="message-input" id="message" name="message" placeholder="Message (optional)" maxlength="250" tabindex="6"></textarea>
+                        <textarea class="message-input" id="message" name="message" placeholder="Message (optional)" maxlength="200" tabindex="6"></textarea>
                         <button class="form-btn" type="submit" tabindex="6">Send</button>
                 </div>
             </section>

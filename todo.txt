@@ -1,0 +1,1 @@
+enforce character limits in js (frontend or backend?)

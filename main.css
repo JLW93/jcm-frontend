@@ -29,6 +29,10 @@ textarea {
     height: 100%;
 }
 
+.red {
+    color: red;
+}
+
 .navbar ul {
     display: flex;
     list-style-type: none;
@@ -264,10 +268,12 @@ textarea {
 }
 
 .qs-selection {
+    border: none;
     grid-area: 4 / 2 / 4 / 3
 }
 
 .service-selection {
+    border: none;
     grid-area: 5 / 1 / 5 / 3;
     text-align: center;
 }

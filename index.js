@@ -55,6 +55,19 @@ function toTop() {
     });
 }
 
+const otherService = document.querySelector('#other_service');
+const messageInput = document.querySelector('#message');
+
+otherService.addEventListener('click', function() {
+    if(!messageInput.hasAttribute("required")) {
+        messageInput.setAttribute("required", "");
+        messageInput.setAttribute("placeholder", "Message (required)");
+    } else {
+        messageInput.removeAttribute("required", "");
+        messageInput.setAttribute("placeholder", "Message (optional)");
+    }
+})
+
 const form = document.querySelector('#contactForm');
 const port = 3000;
 const url = `https://ginger-honey-grease.glitch.me`
@@ -67,6 +80,18 @@ form.addEventListener('submit', async (e) => {
     const data = Object.fromEntries(formData.entries());
 
     Object.assign(data, {type_of_service: selectedServices});
+
+    const trimmedFirst = data.first_name.slice(0,15);
+    const trimmedLast = data.last_name.slice(0,15);
+    const trimmedEmail = data.email.slice(0,30);
+    const trimmedMessage = data.message.slice(0,200);
+
+    Object.assign(data, {first_name: trimmedFirst});
+    Object.assign(data, {last_name: trimmedLast});
+    Object.assign(data, {email: trimmedEmail});
+    Object.assign(data, {message: trimmedMessage});
+
+    console.log(data);
 
     try {
         const response = await fetch(`${url}/api/sendmail`, { // replace '/api/data' with url for backend API
