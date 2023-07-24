@@ -91,8 +91,6 @@ form.addEventListener('submit', async (e) => {
     Object.assign(data, {email: trimmedEmail});
     Object.assign(data, {message: trimmedMessage});
 
-    console.log(data);
-
     try {
         const response = await fetch(`${url}/api/sendmail`, { // replace '/api/data' with url for backend API
             method: 'POST',
