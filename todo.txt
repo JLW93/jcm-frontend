@@ -1,1 +1,2 @@
-enforce character limits in js (frontend or backend?)
+add privacy fence and tilework - backsplash in kitchen
+flower bed
