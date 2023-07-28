@@ -411,6 +411,32 @@ input::placeholder {
     width: 40px;
 }
 
+.footer-text {
+    width: 50%;
+    margin: 2.5% auto 2.5%;
+    text-align: center;
+    color:#161925;
+}
+
+.relative {
+    position: relative;
+}
+
+.top-btn {
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    top: -120%;
+    background-color: #EAE0CC;
+    border: 5px solid #165624;
+    transition: ease 0.5s;
+}
+
+.top-btn:hover {
+    transition: ease 0.5s;
+    background-color: #d0c3a9;
+}
+
 /* IDs */
 #contact {
     background-color: #165624;
@@ -610,7 +636,14 @@ input::placeholder {
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 425px) {
+    .top-btn {
+        right: 5%;
+        top: -70%;
+    }
+}
+
+@media (max-width: 375px) {
     * {
         /* border: 1px solid red; */
     }
@@ -639,7 +672,7 @@ input::placeholder {
     }
 
     .hero-subtext {
-        font-size: .7rem;
+        font-size: .8rem;
         margin: 0 0 5% 5%;
     }
 
@@ -842,5 +875,14 @@ input::placeholder {
         margin: 0 auto;
         text-align: left;
         justify-content: start;
+    }
+
+    .top-btn {
+        right: 5%;
+        top: -32.5%;
+    }
+
+    .footer-text {
+        font-size: .9rem;
     }
 }
