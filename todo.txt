@@ -1,2 +1,28 @@
+CHANGE SERVICES:
 add privacy fence and tilework - backsplash in kitchen
 flower bed
+change layout of services - card layout with carousel
+example:
+---------------------------------
+|                               |
+|             icon              |
+|-------------------------------|
+|                               |
+|   privacy fence installation  |
+|                               |
+|-------------------------------|
+|                               |
+|                               |
+|      notes about service      |
+|                               |
+|                               |
+|                               |
+|                               |
+|                               |
+|                               |
+---------------------------------
+
+two on screen at once? maybe three?
+arrows on either side to scroll and display more
+
+add photos (to site or to google?)
