@@ -26,3 +26,5 @@ two on screen at once? maybe three?
 arrows on either side to scroll and display more
 
 add photos (to site or to google?)
+
+convert over to CDN form images to save load times?
