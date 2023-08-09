@@ -38,6 +38,14 @@ textarea {
     list-style-type: none;
 }
 
+.nav-phone {
+    color:#165624;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
 /* Classes */
 
 .row {
@@ -413,7 +421,7 @@ input::placeholder {
 
 .footer-text {
     width: 50%;
-    margin: 2.5% auto 2.5%;
+    margin: 2% auto 2%;
     text-align: center;
     color:#161925;
 }
@@ -426,7 +434,7 @@ input::placeholder {
     border-radius: 50%;
     position: absolute;
     right: 5%;
-    top: -120%;
+    top: -80%;
     background-color: #EAE0CC;
     border: 5px solid #165624;
     transition: ease 0.5s;
@@ -634,12 +642,16 @@ input::placeholder {
     .hero-subtext {
         margin: 0 0 5% 5%;
     }
+
+    .hide {
+        display: none;
+    }
 }
 
 @media (max-width: 425px) {
     .top-btn {
         right: 5%;
-        top: -70%;
+        top: -45%;
     }
 }
 
@@ -879,7 +891,7 @@ input::placeholder {
 
     .top-btn {
         right: 5%;
-        top: -32.5%;
+        top: -27.5%;
     }
 
     .footer-text {
