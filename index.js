@@ -110,4 +110,17 @@ form.addEventListener('submit', async (e) => {
     } catch (error) {
         // error code for network or other errors
     }
+});
+
+const messageTextArea = document.querySelector('.message-input');
+const messageLimit = document.querySelector('#messageLimit');
+
+messageTextArea.addEventListener('keyup', function() {
+    let messageLength = messageTextArea.value.length;
+    console.log(messageLength);
+    let messageRemaining = 200 - messageLength;
+    console.log(`Remaining: ${messageRemaining}`);
+
+    messageLimit.innerHTML = `${messageRemaining}/200`;
+
 })

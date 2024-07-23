@@ -258,13 +258,17 @@ textarea {
     -webkit-backdrop-filter: blur(8px);
 }
 
+.small-text {
+    font-size: .8rem;
+}
+
 .form-container {
     background-color: #EAE0CC;
     border-radius: 10px;
     color: #161925;
     display: grid;
     gap: 20px;
-    grid-template: repeat(7, 1fr) / 1fr 1fr;
+    grid-template: repeat(8, 1fr) / 1fr 1fr;
     /* font-size: 1.5rem; */
     /* width: 75%; */
     text-align: left;
